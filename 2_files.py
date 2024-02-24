@@ -20,7 +20,7 @@ def main():
     with (open("referat2.txt", 'w', encoding="utf-8")) as newfile:
         text_length = newfile.write(str(f'{len(text)} \n'))
         count_words = newfile.write(str(f'{len(text.split())} \n'))
-        newtext = newfile.write(modified_text)
+        newfile.write(modified_text)
 
 
 if __name__ == "__main__":
